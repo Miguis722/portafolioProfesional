@@ -1,0 +1,14 @@
+:root {
+    /* Primera Per IS */
+    --color-1: #4B4B4B; /* Representa su enfoque en la eficiencia, la mecánica y la lógica. */
+    --color-2: #1C3D5A; /* Simboliza su introspección y tranquilidad interior. */
+    --color-3: #6B8E23; /* Relacionado con su lado práctico y amante de la naturaleza. */
+    --color-4: #CC5500; /* Agrega un toque de energía y aventura, destacando su habilidad para la acción. */ 
+    --color-5: #F5F5F5; /* Para reflejar la simplicidad y claridad en sus procesos. */ 
+    /* Segunda Per IN */
+    --color-5: #000000; /* Representa la sofisticación, el misterio y la independencia. */
+    --color-6: #4B4B4B; /* Sugiere profesionalismo y estabilidad. */
+    --color-7: #003366; /* Evoca confianza, profundidad y pensamiento estratégico. */
+    --color-8: #50C878; /* Simboliza el crecimiento, la ambición y la frescura de ideas. */
+    --color-9: #FFFFFF; /* Representa claridad, simplicidad y la apertura a nuevas perspectivas. */
+}
