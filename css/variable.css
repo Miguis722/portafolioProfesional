@@ -11,4 +11,5 @@
     --color-7: #003366; /* Evoca confianza, profundidad y pensamiento estratégico. */
     --color-8: #50C878; /* Simboliza el crecimiento, la ambición y la frescura de ideas. */
     --color-9: #FFFFFF; /* Representa claridad, simplicidad y la apertura a nuevas perspectivas. */
+    --space-layout-padding-lr: 0px 15px;
 }

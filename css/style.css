@@ -1,2 +1,164 @@
 @import url(variable.css);
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+    /* background-color: hsl(0, 100%, 50%); */
+    padding: var(--space-layout-padding-lr, 10px); /* Asegúrate de definir esta variable en variable.css */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto; /* Cambiado a auto para ajustar a la altura del contenido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Añadido un poco de sombra para destacar el header */
+}
+
+/* HEADER CONTENT - PROFILE (User)*/
+.header__login {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header__login img {
+    width: 100%;
+}
+
+/* HEADER CONTENT - LIST */
+.header__list__ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__list__ul li {
+    margin: 0 10px;
+}
+
+/* DESING FOR THE HEADER - TEXT */
+.box {
+    width: 140px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+
+.box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+}
+
+.box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+}
+
+button {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+/* LANGUAGES AVAILABLE FOR THE PAGES */
+.languages__avaliable {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    height: auto;
+}
+
+.languages_ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.languages_ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 5px;
+}
+
+.languages_ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* LANGUAGE SELECTED */
+.languages_ul li {
+    opacity: 1; /* Por defecto, la opacidad es 1 (visible) */
+    transition: opacity 0.3s ease; /* Transición suave al cambiar la opacidad */
+}
+
+.languages_ul li.inactive {
+    opacity: 0.5; /* Cambia la opacidad a 0.5 para elementos inactivos */
+    filter: grayscale(100%); /* Aplica un filtro en escala de grises para un efecto adicional */
+}
+
+.languages_ul li:hover {
+    opacity: 1; /* Por defecto, la opacidad es 1 (visible) */
+    transition: opacity 0.3s ease; /* Transición suave al cambiar la opacidad */
+    filter: grayscale(0%);
+}
+
