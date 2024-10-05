@@ -13,3 +13,18 @@
     --color-9: #FFFFFF; /* Representa claridad, simplicidad y la apertura a nuevas perspectivas. */
     --space-layout-padding-lr: 0px 15px;
 }
+
+@font-face {
+    font-family: 'Poppins-BoldItalic';
+    src: url(../src/fonts/Poppins/Poppins-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../src/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url(../src/fonts/Poppins/Poppins-ExtraBold.ttf);
+}

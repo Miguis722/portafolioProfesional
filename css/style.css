@@ -61,6 +61,7 @@
     background: transparent;
     text-transform: uppercase;
     font-weight: 900;
+    font-family: 'Poppins-ExtraBold';
 }
 
 .box:before {
@@ -324,6 +325,61 @@ button {
     transform: translateY(-50%);
 }
 
+/* GREETINGS TO THE VISITORS */
+
+.greetings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 740px;
+    width: 100%;
+    background-color: var(--color-9);
+    opacity: 0.8;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, var(--color-9) 19px), repeating-linear-gradient(#50C87855, var(--color-8));
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.greetings h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--color-1);
+    font-family: 'Poppins-BoldItalic';
+    animation: slideIn 0.5s ease-in;
+}
+
+.greetings h2 {
+    font-size: 30px;
+    color: var(--color-5);
+    font-family: 'Poppins-Bold';
+    animation: slideIn 0.5s ease-in 0.2s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Button in the corner */
 
 /* LANGUAGES AVAILABLE FOR THE PAGES */
@@ -427,6 +483,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 1000;
 }
 
 .svgIcon {
