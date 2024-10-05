@@ -116,60 +116,6 @@ button {
     background: transparent;
 }
 
-/* LANGUAGES AVAILABLE FOR THE PAGES */
-.languages__avaliable {
-    /* background-color: aqua; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px;
-    height: auto;
-}
-
-.languages_ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.languages_ul li {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 5px;
-}
-
-.languages_ul li img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* LANGUAGE SELECTED */
-.languages_ul li {
-    opacity: 1;
-    /* Por defecto, la opacidad es 1 (visible) */
-    transition: opacity 0.3s ease;
-    /* Transición suave al cambiar la opacidad */
-}
-
-.languages_ul li.inactive {
-    opacity: 0.5;
-    /* Cambia la opacidad a 0.5 para elementos inactivos */
-    filter: grayscale(100%);
-    /* Aplica un filtro en escala de grises para un efecto adicional */
-}
-
-.languages_ul li:hover {
-    opacity: 1;
-    /* Por defecto, la opacidad es 1 (visible) */
-    transition: opacity 0.3s ease;
-    /* Transición suave al cambiar la opacidad */
-    filter: grayscale(0%);
-}
-
 /* THEMES SELECTOR - BUTTON  */
 
 .theme-switch {
@@ -376,4 +322,86 @@ button {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+/* Button in the corner */
+
+/* LANGUAGES AVAILABLE FOR THE PAGES */
+.languages__avaliable {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-start;
+}
+
+.dropdown_languages {
+    position: relative;
+}
+
+.dropdown_languages img {
+    width: 45px;
+    height: 45px;
+}
+
+.dropdown__content__languages {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.dropdown_languages:hover .dropdown__content__languages {
+    display: block;
+    /* Muestra el contenido al pasar el mouse */
+}
+
+.languages_ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.languages_ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 8px;
+    margin-bottom: 10px;
+}
+
+.languages_ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* LANGUAGE SELECTED */
+.languages_ul li {
+    opacity: 1;
+    /* Por defecto, la opacidad es 1 (visible) */
+    transition: opacity 0.3s ease;
+    /* Transición suave al cambiar la opacidad */
+}
+
+.languages_ul li.inactive {
+    opacity: 0.5;
+    /* Cambia la opacidad a 0.5 para elementos inactivos */
+    filter: grayscale(100%);
+    /* Aplica un filtro en escala de grises para un efecto adicional */
+}
+
+.languages_ul li:hover {
+    opacity: 1;
+    /* Por defecto, la opacidad es 1 (visible) */
+    transition: opacity 0.3s ease;
+    /* Transición suave al cambiar la opacidad */
+    filter: grayscale(0%);
+    /* Retorna a color al pasar el mouse */
 }
