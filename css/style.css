@@ -543,6 +543,10 @@ button {
     color: var(--color-8)
 }
 
+.text_orange {
+    color: rgb(255, 133, 0);
+}
+
 /* Button in the corner */
 
 /* LANGUAGES AVAILABLE FOR THE PAGES */
@@ -684,4 +688,181 @@ button {
     opacity: 1;
     bottom: unset;
     transition-duration: 0.3s;
+}
+
+.Projects_done {
+    width: 100%;
+    background-color: var(--color-9);
+    background-image: radial-gradient(circle at center center, var(--color-8), var(--color-9)), repeating-radial-gradient(circle at center center, var(--color-8), var(--color-8), 10px, transparent 20px, transparent 10px);
+    background-blend-mode: multiply;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_title h2 {
+    padding-top: 20PX;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    color: var(--color-6);
+    font-family: 'Poppins-BoldItalic';
+    margin-bottom: 20px;
+}
+
+.project_title p {
+    margin-bottom: 20px;
+    font-family: 'Poppins-BoldItalic';
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.container_projects_done {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 22em;
+    max-width: 80%;
+    padding: 2em 0;
+    background: #FFF;
+    box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
+    transition: all 0.35s ease;
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: orange;
+    height: 4px;
+}
+
+.card::before {
+    width: 0;
+    opacity: 0;
+    transition: opacity 0 ease, width 0 ease;
+    transition-delay: 0.5s;
+}
+
+.card::after {
+    width: 100%;
+    background: white;
+    transition: width 0.5s ease;
+}
+
+.card .content {
+    width: 18em;
+    max-width: 80%;
+}
+
+.card .logo {
+    color: var(--color-5);
+    font-family: 'Poppins-Bold';
+    margin: 0 0 1em;
+    width: 10.625em;
+    transition: all 0.35s ease;
+}
+
+.card .h6 {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins-Bold';
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.card .hover_content {
+    overflow: hidden;
+    max-height: 0;
+    transform: translateY(1em);
+    transition: all 0.55s ease;
+}
+
+.card .hover_content p {
+    margin: 1.5em 0 0;
+    color: var(--color-5);
+    line-height: 1.4em;
+}
+
+.card:hover {
+    width: 24em;
+    box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+}
+
+.card:hover::before {
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease, width 0.5s ease;
+    transition-delay: 0;
+}
+
+.card:hover::after {
+    width: 0;
+    opacity: 0;
+    transition: width 0 ease;
+}
+
+.card:hover .logo {
+    margin-bottom: 0.5em;
+}
+
+.card:hover .hover_content {
+    max-height: 10em;
+    transform: none;
+}
+
+.container_projects_done {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* Espacio entre tarjetas */
+    height: 100%;
+}
+
+.card {
+    width: 80%;
+    max-width: 24em;
+    margin-bottom: 20px;
+    padding: 2em 0;
+    background: #FFF;
+    box-shadow: 0 0 6px 0 rgba(32, 32, 36, 0.12);
+    transition: all 0.35s ease;
+}
+
+/* Media queries para Responsividad */
+@media (min-width: 768px) {
+    .container_projects_done {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: 30%;
+    }
 }
