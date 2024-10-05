@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* HEADER */
 .header {
     /* background-color: hsl(0, 100%, 50%); */
