@@ -64,6 +64,11 @@
     font-family: 'Poppins-ExtraBold';
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .box:before {
     position: absolute;
     content: '';
@@ -378,6 +383,160 @@ button {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* TERMINAL PRESENTATION*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tittle_about_me {
+    font-family: 'Poppins-BoldItalic';
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: var(--color-5);
+}
+
+.window {
+    position: relative;
+    height: 350px;
+    width: 800px;
+    background-color: var(--color-9);
+    border: 2px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.window-title {
+    height: 30px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.window-title p {
+    color: var(--color-9);
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.window-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.window-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.window-button.close {
+    background-color: #f00;
+}
+
+.window-button.close:hover {
+    background-color: rgb(182, 2, 2);
+    cursor: pointer;
+}
+
+.window-button.reduce {
+    background-color: #ff0;
+}
+
+.window-button.reduce:hover {
+    background-color: rgb(172, 172, 4);
+    cursor: pointer;
+}
+
+.window-button.fullscreen {
+    background-color: #0f0;
+}
+
+.window-button.fullscreen:hover {
+    background-color: rgb(7, 159, 7);
+    cursor: pointer;
+}
+
+.window-button:focus {
+    outline: none;
+}
+
+.text_title_console {
+    font-size: 20px;
+    font-family: 'Poppins-BoldItalic';
+}
+
+.console {
+    width: 100%;
+    height: calc(100% - 30px);
+    background-color: var(--color-5);
+    color: var(--color-9);
+    overflow: auto;
+    padding: 10px;
+}
+
+.console pre {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.console pre code {
+    color: #0f0;
+    outline: none;
+    white-space: pre-wrap;
+    /* Permite que el código se ajuste */
+}
+
+.console::-webkit-scrollbar {
+    width: 8px;
+}
+
+.console::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+.console::-webkit-scrollbar-thumb {
+    background-color: var(--color-1);
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.console::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+.text_purple {
+    color: rgb(235, 70, 235);
+}
+
+.text_blue {
+    color: rgb(55, 163, 235);
+}
+
+.text_yellow {
+    color: rgb(228, 228, 81);
+}
+
+.text_white {
+    color: var(--color-9);
+}
+
+.text_green {
+    color: var(--color-8)
 }
 
 /* Button in the corner */
