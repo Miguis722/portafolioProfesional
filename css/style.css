@@ -690,12 +690,13 @@ button {
     transition-duration: 0.3s;
 }
 
+/* PROJECTS */
 .Projects_done {
     width: 100%;
     background-color: var(--color-9);
     background-image: radial-gradient(circle at center center, var(--color-8), var(--color-9)), repeating-radial-gradient(circle at center center, var(--color-8), var(--color-8), 10px, transparent 20px, transparent 10px);
     background-blend-mode: multiply;
-    height: 750px;
+    height: 785px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -865,4 +866,125 @@ button {
     .card {
         width: 30%;
     }
+}
+
+
+
+
+/* FOOTER */
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
+}
+
+@media (min-width: 768px) {
+    .footer_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer_list {
+        justify-content: space-evenly;
+    }
+}
+
+
+
+/* FOOTER - BUTTONS  */
+.Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.BG_linkedin {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0077b5;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.BG_youtube {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+/* ANIMATION BUTTON FOOTER */
+
+.Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.Btn:hover .BG_linkedin {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.Btn:hover .BG_youtube {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+    backdrop-filter: blur(4px);
 }
