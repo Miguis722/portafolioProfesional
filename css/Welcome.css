@@ -1,0 +1,96 @@
+@import url(variable.css);
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button_container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.button_container_button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--color-9);
+    z-index: 2;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins-ExtraBold';
+}
+
+.button_container_button a {
+    text-decoration: none;
+    color: var(--color-9);
+    z-index: 3;
+    position: relative;
+}
+
+.button_container_button:hover {
+    background-image: url(../src/images/fog.gif);
+}
+
+.left_information_container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
+    color: var(--color-9);
+    font-family: 'Poppins-BoldItalic';
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.left_information_container_text {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .left_information_container {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .left_information_container_text {
+        text-align: center;
+    }
+}
+
+.show-button {
+    opacity: 1;
+    visibility: visible;
+}
