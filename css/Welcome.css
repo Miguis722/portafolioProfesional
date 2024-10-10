@@ -79,14 +79,33 @@
 
 @media (max-width: 768px) {
     .left_information_container {
-        position: fixed;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 40px;
+        width: 100%;
+        left: 0;
+        height: 120px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
     }
 
     .left_information_container_text {
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .button_container {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+        position: fixed;
+        right: 50px;
+        bottom: 20px;
     }
 }
 
