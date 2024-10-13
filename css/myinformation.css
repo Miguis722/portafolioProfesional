@@ -444,3 +444,101 @@ ul {
     width: 30px;
     height: 30px;
 }
+
+#ThePestBlack {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    width: 900px;
+    height: 700px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.text_information_container_complete {
+    /* background-color: #0288D1; */
+    position: absolute;
+    border: 5px solid var(--color-1);
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    top: 20px;
+    left: 50px;
+    z-index: 1000;
+}
+
+.text_information {
+    color: var(--color-9);
+    font-family: 'Poppins-Bold';
+}
+
+.text_information_container_complete_regulation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+}
+
+.text_information_container_complete_regulation p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.myimagecomplete {
+    width: 50%;
+    height: auto;
+    border-radius: 20%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* MISIÓN Y VISIÓN CSS COMPLETE (COMPUTER) */
+
+.text_information_container_complete_regulation_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background: slategray;
+    border-radius: 10px; */
+}
+
+.text_information_container_complete_regulation_row p {
+    color: var(--color-9);
+    text-align: justify;
+    font-family: 'Poppins-Bold';
+}
+
+.text_information_vision,
+.text_information_vision_mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 45%;
+    margin-right: 5%;
+}
+
+.text_information_vision p,
+.text_information_vision_mission p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.text_information_vision_mission {
+    margin-right: 0;
+}
+
+.text_information_vision img,
+.text_information_vision_mission img {
+    width: 90px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
