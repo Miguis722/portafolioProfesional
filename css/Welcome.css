@@ -18,11 +18,8 @@
 
 .button_container {
     position: fixed;
-    bottom: 20px;
     right: 20px;
     z-index: 2;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
 #hidden {
@@ -32,10 +29,6 @@
 #Miguis722 {
     position: fixed;
     bottom: 20px;
-    right: 20px;
-    z-index: 10000;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
 .button_container_button {
