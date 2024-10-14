@@ -237,10 +237,16 @@ li:last-child {
 
 /* Titulos de las secciones de certificados */
 .title__certificates {
-    margin-left: -50px;
+    /* margin-left: -50px; */
     margin-top: 10px;
     margin-bottom: 10px;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .title__certificates {
+        margin-left: -50px;
+    }
 }
 
 .title__certificates p {
@@ -454,6 +460,10 @@ ul {
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeIn 0.6s ease forwards;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .text_information_container_complete {
@@ -498,6 +508,13 @@ ul {
 }
 
 /* MISIÓN Y VISIÓN CSS COMPLETE (COMPUTER) */
+.text_information_complete_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
 
 .text_information_container_complete_regulation_row {
     display: flex;
@@ -542,3 +559,60 @@ ul {
     margin: 10px auto;
 }
 
+.list_information_objective_complete li {
+    color: var(--color-9);
+    font-family: 'Poppins-Bold';
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.list_information_objetives_li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--color-9);
+    font-family: 'Poppins-Bold';
+}
+
+.list_information_objetives_li p {
+    font-size: 15px;
+}
+
+.list_information_certificates_li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.lists_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list_complete {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    margin: 0 1%;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text_information_complete_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
