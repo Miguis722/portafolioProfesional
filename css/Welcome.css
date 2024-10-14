@@ -29,6 +29,8 @@
 #Miguis722 {
     position: fixed;
     bottom: 20px;
+    transition: opacity 0.5s ease;
+    opacity: 1;
 }
 
 .button_container_button {
