@@ -469,6 +469,8 @@ ul {
 .text_information_container_complete {
     /* background-color: #0288D1; */
     position: absolute;
+    height: 100vh;
+    width: 100vh;
     border-radius: 10px;
     margin: 0;
     padding: 0;
@@ -495,6 +497,7 @@ ul {
     width: 80%;
     margin: auto;
     padding: 0;
+    transform: translateY(100px);
 }
 
 .text_information_container_complete_regulation p {
@@ -523,6 +526,11 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    transform: translateY(150px);
+
     /* background: slategray;
     border-radius: 10px; */
 }
@@ -615,7 +623,8 @@ ul {
 .text_information_complete_contact {
     display: flex;
     justify-content: center;
+    align-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 35vh;
 }
