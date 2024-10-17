@@ -628,3 +628,7 @@ ul {
     width: 100%;
     margin-top: 35vh;
 }
+
+a {
+    text-decoration: none;
+}
