@@ -601,8 +601,8 @@ ul {
 
 .lists_container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 
 .list_complete {
